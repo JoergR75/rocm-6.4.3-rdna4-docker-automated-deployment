@@ -52,14 +52,37 @@ cd rocm-6.4.3-rdna4-docker-deployment
 ```
 ### 2️⃣ **Run the Installer**
 ```bash
-bash rocm-6.4.3-setup.sh
+bash script_module_ROCm_643_Ubuntu_22.04-24.04_pytorch_290_docker_v1server.sh
 ```
-
 The installation takes ~15 minutes depending on internet speed and hardware performance.
 
-🐋 Docker Integration
+## 🐋 Docker Integration
 
 The script sets up a Docker environment with GPU passthrough support via ROCm.
 
 Check Docker Installation
+```bash
 docker --version
+```
+<img width="316" height="50" alt="{AB0C0C91-0328-43D0-AC17-83194D4E68B0}" src="https://github.com/user-attachments/assets/9f4dacc0-47be-4a10-8c09-b3ebf48a8b16" />
+
+### 🤖 vLLM Docker Images
+
+To use vLLM optimized for RDNA4 and CDNA3:
+```bash
+# RDNA4 build
+sudo docker pull rocm/vllm-dev:open-r9700-08052025
+
+# CDNA3 build
+sudo docker pull rocm/vllm:latest
+```
+
+Run vLLM with all available AMD GPU Access (example for RDNA4)
+```bash
+sudo docker run -it \
+    --device=/dev/kfd \
+    --device=/dev/dri \
+    --security-opt seccomp=unconfined \
+    --group-add video \
+    rocm/vllm-dev:open-r9700-08052025
+```
