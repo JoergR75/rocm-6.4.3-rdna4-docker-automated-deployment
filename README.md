@@ -92,12 +92,18 @@ sudo docker run -it \
 
 After rebooting, verify your setup:
 
-Check ROCm Environment
-- rocminfo
-- clinfo
-- rocm-smi
+This script is a simple diagnostic to verify that PyTorch with ROCm support is correctly installed and working.
 
-Run the PyTorch Test
+What it does:
+
+- Prints the PyTorch version and ROCm version.
+- Checks if ROCm is available and how many GPUs are detected.
+- Displays the name of the first GPU (if available).
+- Creates two random 3×3 tensors directly on the GPU (if available).
+- Performs a simple tensor addition operation on the GPU.
+- Prints confirmation that the operation was successful and shows the result.
+
+Example usage:
 ```bash
 python3 test.py
 ```
