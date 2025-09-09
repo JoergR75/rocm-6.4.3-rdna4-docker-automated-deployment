@@ -69,6 +69,7 @@ docker --version
 ### 🤖 vLLM Docker Images
 
 To use vLLM optimized for RDNA4 and CDNA3:
+Use the container image you need.
 ```bash
 # RDNA4 build
 sudo docker pull rocm/vllm-dev:open-r9700-08052025
