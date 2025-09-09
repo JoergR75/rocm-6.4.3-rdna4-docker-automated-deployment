@@ -50,7 +50,7 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 git clone https://github.com/<your-org>/rocm-6.4.3-rdna4-docker-deployment.git
 cd rocm-6.4.3-rdna4-docker-deployment
 ```
-### 2️⃣ **Run the Installer
+### 2️⃣ **Run the Installer**
 ```bash
 bash rocm-6.4.3-setup.sh
 ```
