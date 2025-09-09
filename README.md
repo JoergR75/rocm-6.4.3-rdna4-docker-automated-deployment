@@ -90,8 +90,8 @@ sudo docker run -it \
 With "rocm-smi" you can verify all available GPUs (here 2x Radeon AI PRO R9700 GPUs)
 <img width="929" height="199" alt="{F715178C-A958-4529-9BB3-9F2E2F7661A2}" src="https://github.com/user-attachments/assets/46094f88-5540-453d-829e-f2ec07b3ad95" />
 
-If you need to add a specific GPU it will work via passthrough option.
-First verify available GPU's in /dev/dri folder
+If you need to add a specific GPU, you can use the **passthrough** option.  
+First, verify the available GPUs in the `/dev/dri` directory.
 <img width="381" height="64" alt="{CA7F5FFD-B028-4620-B625-A0FCDA00155D}" src="https://github.com/user-attachments/assets/b976b314-f885-4373-8452-be52a8a05244" />
 
 Lets choose GPU2 alias "card2" / "renderD129"
