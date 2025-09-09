@@ -162,3 +162,18 @@ sudo /opt/rocm/bin/rocm-bandwidth-test -a
 The tool prints results in a **matrix format** showing bandwidth (GB/s) between every device pair.
 
 <img width="646" height="663" alt="{51926F23-C527-4447-89E4-69A64A4CB02C}" src="https://github.com/user-attachments/assets/1799223f-a123-41e9-9f87-d4ddf5f9266a" />
+
+⚠️ **Caution:**  
+Make sure **"Resize BAR"** is enabled in the **SBIOS**.  
+If it is disabled, **P2P** will be deactivated, as shown below:
+
+<img width="458" height="520" alt="image" src="https://github.com/user-attachments/assets/31f929b0-0c6a-4f3e-b2e7-e2dd4ac60ef7" />
+
+### How to Enable **Resize BAR** in SBIOS
+
+1. Enter **SBIOS**  
+2. Navigate to **Advanced**  
+3. Go to **PCI Subsystem Settings**
+
+<img width="357" height="203" alt="image" src="https://github.com/user-attachments/assets/0f1d7c5f-5433-4c5e-afd8-72158c603482" />
+<img width="492" height="150" alt="image" src="https://github.com/user-attachments/assets/4261936a-d983-481a-8129-9f9bd1f8a0a4" />
