@@ -95,7 +95,7 @@ First, verify the available GPUs in the `/dev/dri` directory.
 
 <img width="381" height="64" alt="{CA7F5FFD-B028-4620-B625-A0FCDA00155D}" src="https://github.com/user-attachments/assets/b976b314-f885-4373-8452-be52a8a05244" />
 
-Lets choose GPU2 alias "card2" / "renderD129"
+Let's choose **GPU2**, also referred to as **"card2"** or **"renderD129"**.
 ```bash
 sudo docker run -it \
     --device=/dev/kfd \
