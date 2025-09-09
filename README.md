@@ -104,3 +104,32 @@ python3 test.py
 Expected Output Example:
 
 <img width="428" height="170" alt="{4EC9DFE2-F166-4C51-9111-B75EFD43EFC0}" src="https://github.com/user-attachments/assets/9aa47f7c-7e63-4c43-813b-2d5bd00e7fff" />
+
+## ROCm Bandwidth Test (`rocm-bandwidth-test -a`)
+```bash
+sudo /opt/rocm/bin/rocm-bandwidth-test -a
+```
+**AMD’s ROCm Bandwidth Test utility** with the **`-a` (all tests)** flag runs a complete set of bandwidth diagnostics.
+
+### What it does
+
+`rocm-bandwidth-test` is a diagnostic tool included in ROCm that measures **memory bandwidth performance** between:
+
+- Host (CPU) ↔ GPU(s)  
+- GPU ↔ GPU (if multiple GPUs are installed)  
+- GPU internal memory  
+
+### `-a` (all tests) option
+
+Using the `-a` flag runs **all available tests**, including:
+
+- **Host-to-Device (H2D)** bandwidth  
+- **Device-to-Host (D2H)** bandwidth  
+- **Device-to-Device (D2D)** bandwidth (for multi-GPU)  
+- **Bidirectional / concurrent** bandwidth tests  
+
+### Output
+
+The tool prints results in a **matrix format** showing bandwidth (GB/s) between every device pair.
+
+<img width="646" height="663" alt="{51926F23-C527-4447-89E4-69A64A4CB02C}" src="https://github.com/user-attachments/assets/1799223f-a123-41e9-9f87-d4ddf5f9266a" />
