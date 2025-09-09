@@ -111,7 +111,7 @@ Expected Output Example:
 
 <img width="428" height="170" alt="{4EC9DFE2-F166-4C51-9111-B75EFD43EFC0}" src="https://github.com/user-attachments/assets/9aa47f7c-7e63-4c43-813b-2d5bd00e7fff" />
 
-## ROCm Bandwidth Test (`rocm-bandwidth-test -a`)
+## 📶 ROCm Bandwidth Test (`rocm-bandwidth-test -a`)
 ```bash
 sudo /opt/rocm/bin/rocm-bandwidth-test -a
 ```
