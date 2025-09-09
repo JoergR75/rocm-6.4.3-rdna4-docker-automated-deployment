@@ -92,6 +92,7 @@ With "rocm-smi" you can verify all available GPUs (here 2x Radeon AI PRO R9700 G
 
 If you need to add a specific GPU, you can use the **passthrough** option.  
 First, verify the available GPUs in the `/dev/dri` directory.
+
 <img width="381" height="64" alt="{CA7F5FFD-B028-4620-B625-A0FCDA00155D}" src="https://github.com/user-attachments/assets/b976b314-f885-4373-8452-be52a8a05244" />
 
 Lets choose GPU2 alias "card2" / "renderD129"
