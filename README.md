@@ -92,7 +92,7 @@ sudo docker run -it \
 
 After rebooting, verify your setup:
 
-This script is a simple diagnostic to verify that PyTorch with ROCm support is correctly installed and working.
+This script creates a simple diagnostic python file (test.py) to verify that PyTorch with ROCm support is correctly installed and working.
 
 What it does:
 
