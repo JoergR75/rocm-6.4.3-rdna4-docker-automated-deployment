@@ -45,10 +45,9 @@ The setup is fully **non-interactive** and optimized for both **desktop** and **
 
 ## 🚀 Installation
 
-### 1️⃣ **Clone the Repository**
+### 1️⃣ **Download the Script from the Repository**
 ```bash
-git clone https://github.com/<your-org>/rocm-6.4.3-rdna4-docker-deployment.git
-cd rocm-6.4.3-rdna4-docker-deployment
+wget https://raw.githubusercontent.com/JoergR75/rocm-6.4.3-rdna4-docker-automated-deployment/refs/heads/main/script_module_ROCm_643_Ubuntu_22.04-24.04_pytorch_290_docker_v1server.sh
 ```
 ### 2️⃣ **Run the Installer**
 ```bash
